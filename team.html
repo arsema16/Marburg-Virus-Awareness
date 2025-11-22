@@ -1,103 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Marburg Virus Awareness — Team</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team — Marburg Virus Awareness</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .section-team {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .section-team h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .section-team p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .team-card {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 15px;
+      width: 200px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .team-card:hover .avatar {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .team-name {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .team-role {
+      color: #555;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
+    .team-email {
+      color: #0077cc;
+      font-size: 0.9rem;
+      margin-top: 3px;
+      word-wrap: break-word;
+    }
+
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="brand">
-      <h1 class="site-title">Marburg Virus Awareness</h1>
-      <p class="site-tagline">Inform, prevent, and protect communities.</p>
-    </div>
+  <section class="section-team">
+    <h2>Our Team</h2>
+    <p>Group 5 contributors</p>
 
-    <button class="menu-toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
-      <span class="bar" aria-hidden="true"></span>
-      <span class="bar" aria-hidden="true"></span>
-      <span class="bar" aria-hidden="true"></span>
-    </button>
+    <div class="team-grid">
 
-    <nav id="primary-nav" class="primary-nav" role="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="virus.html">Virus Info</a></li>
-        <li><a href="advice.html">Patient Advice</a></li>
-        <li><a href="updates.html">Get Updates</a></li>
-        <li><a href="languages.html">Languages</a></li>
-        <li><a href="team.html" aria-current="page">Team</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="section section-team">
-      <div class="content">
-        <h2>Our Team</h2>
-        <p class="lead">Group 5 contributors. Rafik Awol Ababiya is the Group 5 leader.</p>
-
-        <div class="table-wrap" role="region" aria-label="Team members">
-          <table class="team-table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Role</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="leader">
-                <td>1</td>
-                <td>Rafik Awol Ababiya</td>
-                <td>Group 5 leader</td>
-              </tr>
-              <tr><td>2</td><td>Firdews Nassir</td><td>Team member</td></tr>
-              <tr><td>3</td><td>Aneni Kidanu Manale</td><td>Team member</td></tr>
-              <tr><td>4</td><td>Hilina Ashenafi</td><td>Team member</td></tr>
-              <tr><td>5</td><td>Haileamlak Bekele Ayalew</td><td>Team member</td></tr>
-              <tr><td>6</td><td>Arsema Tefera Gudeta</td><td>Team member</td></tr>
-              <tr><td>7</td><td>Yordanos Haileselassie</td><td>Team member</td></tr>
-              <tr><td>8</td><td>Mekuannet Mengistu Mekonnen</td><td>Team member</td></tr>
-              <tr><td>9</td><td>Yenegazer Firew</td><td>Team member</td></tr>
-              <tr><td>10</td><td>Yedidya Habtamu Teklu</td><td>Team member</td></tr>
-              <tr><td>11</td><td>Afomiya Tilahun</td><td>Team member</td></tr>
-              <tr><td>12</td><td>Nuredin Abdella Desta</td><td>Team member</td></tr>
-              <tr><td>13</td><td>Temesgen Geremu Burka</td><td>Team member</td></tr>
-              <tr><td>14</td><td>Muna Mohammed Husen</td><td>Team member</td></tr>
-              <tr><td>15</td><td>Tsion Hailu</td><td>Team member</td></tr>
-              <tr><td>16</td><td>Jitu Dawit</td><td>Team member</td></tr>
-              <tr><td>17</td><td>Addisu Bayih Demile</td><td>Team member</td></tr>
-              <tr><td>18</td><td>Nebiyu Hiruy Demmelash</td><td>Team member</td></tr>
-              <tr><td>19</td><td>Eyuel Michale</td><td>Team member</td></tr>
-              <tr><td>20</td><td>Mekuannet Mengistu Mekonnen</td><td>Team member</td></tr>
-            </tbody>
-          </table>
+      <!-- 1 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Rafik Awol Ababiya">
         </div>
-
-        <div class="team-footer" aria-hidden="false">
-          <p><strong>Group</strong> Group 5</p>
-        </div>
+        <div class="team-name">Rafik Awol Ababiya</div>
+        <div class="team-role">Group Leader</div>
+        <div class="team-email">rafik.awol@example.com</div>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <small>&copy; <span id="year"></span> Marburg Awareness Project</small>
-    <ul class="social">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="virus.html">Virus Info</a></li>
-      <li><a href="languages.html">Languages</a></li>
-    </ul>
-  </footer>
+      <!-- 2 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png" alt="Firdews Nassir">
+        </div>
+        <div class="team-name">Firdews Nassir</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">firdews.nassir@example.com</div>
+      </div>
 
-  <script>
-    // Set current year
-    const yearEl = document.getElementById('year');
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
-  </script>
+      <!-- 3 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Aneni Kidanu Manale">
+        </div>
+        <div class="team-name">Aneni Kidanu Manale</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">aneni.kidanu@example.com</div>
+      </div>
+
+      <!-- 4 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png" alt="Hilina Ashenafi">
+        </div>
+        <div class="team-name">Hilina Ashenafi</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">hilina.ashenafi@example.com</div>
+      </div>
+
+      <!-- 5 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Haileamlak Bekele Ayalew">
+        </div>
+        <div class="team-name">Haileamlak Bekele Ayalew</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">haileamlak.bekele@example.com</div>
+      </div>
+
+      <!-- 6 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png" alt="Arsema Tefera Gudeta">
+        </div>
+        <div class="team-name">Arsema Tefera Gudeta</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">arsema.tefera@example.com</div>
+      </div>
+
+      <!-- 7 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png" alt="Yordanos Haileselassie">
+        </div>
+        <div class="team-name">Yordanos Haileselassie</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">yordanos.haileselassie@example.com</div>
+      </div>
+
+      <!-- 8 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Mekuannet Mengistu Mekonnen">
+        </div>
+        <div class="team-name">Mekuannet Mengistu Mekonnen</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">mekuannet.mengistu@example.com</div>
+      </div>
+
+      <!-- 9 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Yenegazer Firew">
+        </div>
+        <div class="team-name">Yenegazer Firew</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">yenegazer.firew@example.com</div>
+      </div>
+
+      <!-- 10 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png" alt="Yedidya Habtamu Teklu">
+        </div>
+        <div class="team-name">Yedidya Habtamu Teklu</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">yedidya.teklu@example.com</div>
+      </div>
+
+      <!-- 11 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png" alt="Afomiya Tilahun">
+        </div>
+        <div class="team-name">Afomiya Tilahun</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">afomiya.tilahun@example.com</div>
+      </div>
+
+      <!-- 12 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Nuredin Abdella Desta">
+        </div>
+        <div class="team-name">Nuredin Abdella Desta</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">nuredin.abdella@example.com</div>
+      </div>
+
+      <!-- 13 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Temesgen Geremu Burka">
+        </div>
+        <div class="team-name">Temesgen Geremu Burka</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">temesgen.geremu@example.com</div>
+      </div>
+
+      <!-- 14 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png" alt="Muna Mohammed Husen">
+        </div>
+        <div class="team-name">Muna Mohammed Husen</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">muna.mohammed@example.com</div>
+      </div>
+
+      <!-- 15 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png" alt="Tsion Hailu">
+        </div>
+        <div class="team-name">Tsion Hailu</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">tsion.hailu@example.com</div>
+      </div>
+
+      <!-- 16 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Jitu Dawit">
+        </div>
+        <div class="team-name">Jitu Dawit</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">jitu.dawit@example.com</div>
+      </div>
+
+      <!-- 17 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Addisu Bayih Demile">
+        </div>
+        <div class="team-name">Addisu Bayih Demile</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">addisu.bayih@example.com</div>
+      </div>
+
+      <!-- 18 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Nebiyu Hiruy Demmelash">
+        </div>
+        <div class="team-name">Nebiyu Hiruy Demmelash</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">nebiyu.hiruy@example.com</div>
+      </div>
+
+      <!-- 19 -->
+      <div class="team-card">
+        <div class="avatar">
+          <img src="https://e7.pngegg.com/pngimages/722/477/png-clipart-computer-icons-user-profile-avatar-face-heroes.png" alt="Eyuel Michale">
+        </div>
+        <div class="team-name">Eyuel Michale</div>
+        <div class="team-role">Team Member</div>
+        <div class="team-email">eyuel.michale@example.com</div>
+      </div>
+
+      
+    </div>
+  </section>
+
 </body>
 </html>
