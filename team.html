@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marburg Virus Awareness — Team</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1 class="site-title">Marburg Virus Awareness</h1>
+      <p class="site-tagline">Inform, prevent, and protect communities.</p>
+    </div>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="primary-nav" role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="virus.html">Virus Info</a></li>
+        <li><a href="advice.html">Patient Advice</a></li>
+        <li><a href="updates.html">Get Updates</a></li>
+        <li><a href="languages.html">Languages</a></li>
+        <li><a href="team.html" aria-current="page">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section section-team">
+      <div class="content">
+        <h2>Our Team</h2>
+        <p class="lead">Group 5 contributors. Rafik Awol Ababiya is the Group 5 leader.</p>
+
+        <div class="table-wrap" role="region" aria-label="Team members">
+          <table class="team-table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="leader">
+                <td>1</td>
+                <td>Rafik Awol Ababiya</td>
+                <td>Group 5 leader</td>
+              </tr>
+              <tr><td>2</td><td>Firdews Nassir</td><td>Team member</td></tr>
+              <tr><td>3</td><td>Aneni Kidanu Manale</td><td>Team member</td></tr>
+              <tr><td>4</td><td>Hilina Ashenafi</td><td>Team member</td></tr>
+              <tr><td>5</td><td>Haileamlak Bekele Ayalew</td><td>Team member</td></tr>
+              <tr><td>6</td><td>Arsema Tefera Gudeta</td><td>Team member</td></tr>
+              <tr><td>7</td><td>Yordanos Haileselassie</td><td>Team member</td></tr>
+              <tr><td>8</td><td>Mekuannet Mengistu Mekonnen</td><td>Team member</td></tr>
+              <tr><td>9</td><td>Yenegazer Firew</td><td>Team member</td></tr>
+              <tr><td>10</td><td>Yedidya Habtamu Teklu</td><td>Team member</td></tr>
+              <tr><td>11</td><td>Afomiya Tilahun</td><td>Team member</td></tr>
+              <tr><td>12</td><td>Nuredin Abdella Desta</td><td>Team member</td></tr>
+              <tr><td>13</td><td>Temesgen Geremu Burka</td><td>Team member</td></tr>
+              <tr><td>14</td><td>Muna Mohammed Husen</td><td>Team member</td></tr>
+              <tr><td>15</td><td>Tsion Hailu</td><td>Team member</td></tr>
+              <tr><td>16</td><td>Jitu Dawit</td><td>Team member</td></tr>
+              <tr><td>17</td><td>Addisu Bayih Demile</td><td>Team member</td></tr>
+              <tr><td>18</td><td>Nebiyu Hiruy Demmelash</td><td>Team member</td></tr>
+              <tr><td>19</td><td>Eyuel Michale</td><td>Team member</td></tr>
+              <tr><td>20</td><td>Mekuannet Mengistu Mekonnen</td><td>Team member</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="team-footer" aria-hidden="false">
+          <p><strong>Group</strong> Group 5</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Marburg Awareness Project</small>
+    <ul class="social">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="virus.html">Virus Info</a></li>
+      <li><a href="languages.html">Languages</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // Set current year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
